@@ -12,7 +12,6 @@ echo "CPU load: $CPU"
 echo "RAM used: $RAM_USED"
 echo -e "======================================\n"
 
-
 echo -e "============== \033[31mRUST\033[0m APP =============="
 TIME_RUST=$(time ./HelloWorld/rust/rusty_app/src/main)
 echo "Result: $TIME_RUST"
