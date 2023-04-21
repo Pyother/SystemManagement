@@ -14,9 +14,14 @@ echo "RAM used: $RAM_USED"
 echo "============== RUST APP =============="
 TIME_RUST=$(time ./HelloWorld/rust/rusty_app/src/main)
 echo "Result: $TIME_RUST"
-echo "======================================"
+echo -e "======================================\n"
 
 echo "============= PYTHON APP ============="
 TIME_PYTHON=$(time python ./HelloWorld/python/main.py)
 echo "Result: $TIME_PYTHON"
-echo "======================================"
+echo -e "======================================\n"
+
+echo "============== LUA APP ==============="
+TIME_LUA=$(time lua5.3 ./HelloWorld/lua/main.lua)
+echo "Result: $TIME_LUA"
+echo -e "======================================\n"
