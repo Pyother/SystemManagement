@@ -11,17 +11,17 @@ echo "Current date: $DATE"
 echo "CPU load: $CPU"
 echo "RAM used: $RAM_USED"
 
-echo "============== RUST APP =============="
+echo -e "============== \033[31mRUST\033[0m APP =============="
 TIME_RUST=$(time ./HelloWorld/rust/rusty_app/src/main)
 echo "Result: $TIME_RUST"
 echo -e "======================================\n"
 
-echo "============= PYTHON APP ============="
-TIME_PYTHON=$(time python ./HelloWorld/python/main.py)
+echo -e "============= \033[34mPYTHON\033[0m APP ============="
+TIME_PYTHON=$(time python3 ./HelloWorld/python/main.py)
 echo "Result: $TIME_PYTHON"
 echo -e "======================================\n"
 
-echo "============== LUA APP ==============="
+echo -e "============== \033[36mLUA\033[0m APP ==============="
 TIME_LUA=$(time lua5.3 ./HelloWorld/lua/main.lua)
 echo "Result: $TIME_LUA"
 echo -e "======================================\n"

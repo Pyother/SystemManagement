@@ -11,6 +11,12 @@ RUN apt-get install -y curl \
     && curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs -o rustup.sh \
     && sh rustup.sh -y
 
+# Python installation:
+RUN apt-get install -y python3
+
+# Lua installation:
+RUN apt-get install lua5.3 
+
 ENV PATH="/root/.cargo/bin:${PATH}"
 
 RUN git clone https://github.com/Pyother/SystemManagement.git
