@@ -11,6 +11,12 @@ echo "Current date: $DATE"
 echo "CPU load: $CPU"
 echo "RAM used: $RAM_USED"
 
+echo "============== RUST APP =============="
+TIME_RUST=$(time ./HelloWorld/rust/rusty_app/src/main)
+echo "Result: $TIME_RUST"
+echo "======================================"
 
-
-
+echo "============= PYTHON APP ============="
+TIME_PYTHON=$(time python ./HelloWorld/python/main.py)
+echo "Result: $TIME_PYTHON"
+echo "======================================"
