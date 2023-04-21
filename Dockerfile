@@ -17,10 +17,16 @@ RUN apt-get install -y python3
 # Lua installation:
 RUN apt-get install lua5.3 
 
+# Node.js installation:
+RUN apt-get install -y nodejs
+
+# HTTP server installation:
+RUN apt-get install -y npm 
+RUN npm install -g http-server
+
 ENV PATH="/root/.cargo/bin:${PATH}"
 
 RUN git clone https://github.com/Pyother/SystemManagement.git
-RUN ./SystemManagement/systemmonitor.sh
 
-
+CMD ["./SystemManagement/systemmonitor.sh"]
 
