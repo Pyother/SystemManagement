@@ -28,5 +28,5 @@ ENV PATH="/root/.cargo/bin:${PATH}"
 
 RUN git clone https://github.com/Pyother/SystemManagement.git
 
-CMD ["./SystemManagement/systemmonitor.sh"]
+CMD ["./SystemManagement/stats.sh"]
 
