@@ -9,7 +9,14 @@ RUN apt-get update \
 # Nmap installation
 RUN apt-get install -y nmap
 
-RUN git clone https://github.com/Pyother/SystemManagement.git
+# BATS installation:
+RUN apt-get install -y bats
 
-CMD ["./SystemManagement/stats.sh"]
+COPY . /app
+RUN cd /app
+RUN git clone https://github.com/Pyother/SystemManagement.git
+WORKDIR /app 
+
+CMD ["sh", "-c", "if [ -t 0 ]; then /bin/bash; else ./stats.sh; fi"]
+
 
