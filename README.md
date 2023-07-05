@@ -1,3 +1,3 @@
 # SystemManagement
 
-This project is used to monitor the operating system. The application allows you to display basic information about the current date and time, CPU load and RAM memory usage. In addition, the project provides sample applications in Rust, Python and Lua, which allow you to test the performance of applications written in these languages. It also includes a web application that uses JavaScript and allows you to visually display selected information.
+This project is used to monitor the operating system. The application allows you to display basic information about the current date and time, CPU load and RAM memory usage. 
